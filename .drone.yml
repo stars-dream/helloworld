@@ -1,0 +1,15 @@
+kind: pipeline
+name: default
+
+steps:
+- name: develop
+  image: golang
+  commands:
+  - go get
+  - go test
+  - go run hello.go
+  - go build
+  when:
+    event:
+    - push
+    - pull-request
