@@ -7,7 +7,7 @@ workspace:
 
 steps:
 - name: develop
-  image: golang
+  image: dev-harbor.teyixing.com/public/golang:latest
   commands:
   - go get
   - go test
