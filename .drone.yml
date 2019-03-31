@@ -11,7 +11,7 @@ steps:
   commands:
   - go get
   - go test
-  - go run hello.go
+  - go run helloworld.go
   - go build
   when:
     event:
